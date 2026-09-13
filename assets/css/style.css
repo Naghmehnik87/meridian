@@ -212,6 +212,7 @@ p:last-child {
   font-size: 1.0625rem;
   line-height: 1.65;
   color: var(--muted);
+  max-width: 60ch;
 }
 
 .text-muted-2 {
@@ -329,3 +330,51 @@ hr {
   border-top: 1px solid var(--border);
 }
 
+.section-head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 2.25rem;
+}
+
+.section-head__title {
+  position: relative;
+  padding-left: 1rem;
+  margin-bottom: 0;
+}
+
+.section-head__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.14em;
+  bottom: 0.14em;
+  width: 4px;
+  border-radius: 2px;
+  background-color: var(--primary);
+}
+
+.section-head__sub {
+  color: var(--muted);
+  font-size: var(--fs-sm);
+  margin: .5rem 0 0 1rem;
+  max-width: 52ch;
+}
+
+.section-head__aside {
+  flex-shrink: 0;
+  padding-bottom: .25rem;
+}
+
+.surface-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+.page-head {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding-block: .75rem 1.5rem;
+}

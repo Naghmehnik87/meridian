@@ -1,17 +1,18 @@
 @font-face {
-  font-family: 'Inter Variable';
+  font-family: "Inter Variable";
   font-style: normal;
   font-display: swap;
   font-weight: 100 900;
-  src: url('../fonts/inter-latin-wght-normal.woff2') format("woff2-variations");
+  src: url("../fonts/inter-latin-wght-normal.woff2") format("woff2-variations");
 }
 
 @font-face {
-  font-family: 'Plus Jakarta Sans Variable';
+  font-family: "Plus Jakarta Sans Variable";
   font-style: normal;
   font-display: swap;
   font-weight: 200 800;
-  src: url('../fonts/plus-jakarta-sans-latin-wght-normal.woff2') format("woff2-variations");
+  src: url("../fonts/plus-jakarta-sans-latin-wght-normal.woff2")
+    format("woff2-variations");
 }
 
 :root {
@@ -40,9 +41,9 @@
 
   --primary-wash: rgba(229, 57, 53, 0.08);
   --accent-wash: rgba(245, 158, 11, 0.12);
-  --success-wash: rgba(22, 163, 74, 0.10);
-  --danger-wash: rgba(220, 38, 38, 0.10);
-  --info-wash: rgba(37, 99, 235, 0.10);
+  --success-wash: rgba(22, 163, 74, 0.1);
+  --danger-wash: rgba(220, 38, 38, 0.1);
+  --info-wash: rgba(37, 99, 235, 0.1);
 
   --radius-sm: 6px;
   --radius-md: 10px;
@@ -56,8 +57,10 @@
   --shadow-lg: 0 24px 48px -24px rgba(17, 24, 39, 0.28);
   --ring: 0 0 0 3px rgba(229, 57, 53, 0.28);
 
-  --font-display: 'Plus Jakarta Sans Variable', 'Plus Jakarta Sans', system-ui, sans-serif;
-  --font-body: 'Inter Variable', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-display:
+    "Plus Jakarta Sans Variable", "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-body:
+    "Inter Variable", "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
 
   --fs-display: clamp(2.5rem, 1.4rem + 3.6vw, 4rem);
   --fs-h1: clamp(2rem, 1.3rem + 2.4vw, 3rem);
@@ -82,7 +85,7 @@
   color-scheme: light;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --primary: #ff5a56;
   --primary-dark: #e53935;
   --secondary: #e2e8f0;
@@ -121,10 +124,11 @@
   color-scheme: dark;
 }
 
-
-*, 
+*,
 *::before,
-*::after {box-sizing: border-box;}
+*::after {
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
@@ -139,10 +143,18 @@ body {
   font-weight: 400;
   line-height: 1.6;
   letter-spacing: -0.005em;
-  transition: background-color var(--dur) var(--ease), color var(--dur) var(--ease);
+  transition:
+    background-color var(--dur) var(--ease),
+    color var(--dur) var(--ease);
 }
 
-h1, h2, h3, h4, h5, h6, .display-title {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-title {
   font-family: var(--font-display);
   color: var(--text);
   font-weight: 700;
@@ -150,12 +162,35 @@ h1, h2, h3, h4, h5, h6, .display-title {
   margin-block: 0 0.5em;
 }
 
-h1, .h1 { font-size: var(--fs-h1);}
-h2, .h2 { font-size: var(--fs-h2);}
-h3, .h3 { font-size: var(--fs-h3);}
-h4, .h4 { font-size: var(--fs-h4); font-weight: 650;}
-h5, .h5 { font-size: var(--fs-body); font-weight: 650; letter-spacing: -0.015em;}
-h6, .h6 { font-size: var(--fs-sm); font-weight: 650; letter-spacing: -0.01em;}
+h1,
+.h1 {
+  font-size: var(--fs-h1);
+}
+h2,
+.h2 {
+  font-size: var(--fs-h2);
+}
+h3,
+.h3 {
+  font-size: var(--fs-h3);
+}
+h4,
+.h4 {
+  font-size: var(--fs-h4);
+  font-weight: 650;
+}
+h5,
+.h5 {
+  font-size: var(--fs-body);
+  font-weight: 650;
+  letter-spacing: -0.015em;
+}
+h6,
+.h6 {
+  font-size: var(--fs-sm);
+  font-weight: 650;
+  letter-spacing: -0.01em;
+}
 
 .display-title {
   font-size: var(--fs-display);
@@ -164,8 +199,12 @@ h6, .h6 { font-size: var(--fs-sm); font-weight: 650; letter-spacing: -0.01em;}
   letter-spacing: -0.04em;
 }
 
-p {margin-block: 0 1rem;}
-p:last-child {margin-bottom: 0;}
+p {
+  margin-block: 0 1rem;
+}
+p:last-child {
+  margin-bottom: 0;
+}
 
 .lead-text {
   font-size: 1.0625rem;
@@ -173,11 +212,22 @@ p:last-child {margin-bottom: 0;}
   color: var(--muted);
 }
 
-.text-muted-2 { color: var(--muted);}
-.text-faint { color: var(--faint);}
-.text-primary-brand {color: var(--primary);}
-.small, small {font-size: var(--fs-sm);}
-.text-xs {font-size: var(--fs-xs);}
+.text-muted-2 {
+  color: var(--muted);
+}
+.text-faint {
+  color: var(--faint);
+}
+.text-primary-brand {
+  color: var(--primary);
+}
+.small,
+small {
+  font-size: var(--fs-sm);
+}
+.text-xs {
+  font-size: var(--fs-xs);
+}
 
 a {
   color: var(--primary);
@@ -185,10 +235,16 @@ a {
   transition: color var(--dur-fast) var(--ease);
 }
 
-a:hover {color: var(--primary-dark)}
+a:hover {
+  color: var(--primary-dark);
+}
 
-.link-quiet {color: var(--muted);}
-.link-quiet:hover {color: (var(--text));}
+.link-quiet {
+  color: var(--muted);
+}
+.link-quiet:hover {
+  color: (var(--text));
+}
 
 .link-underline {
   text-decoration: underline;
@@ -196,11 +252,19 @@ a:hover {color: var(--primary-dark)}
   text-decoration-thickness: 1px;
   text-decoration-color: var(--border-strong);
 }
-.link-underline:hover {text-decoration-color: currentColor;}
+.link-underline:hover {
+  text-decoration-color: currentColor;
+}
 
-hr {border-color: var(--border); opacity: 1;}
+hr {
+  border-color: var(--border);
+  opacity: 1;
+}
 
-::selection {background: var(--primary); color: var(--surface);}
+::selection {
+  background: var(--primary);
+  color: var(--surface);
+}
 :focus-visible {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
@@ -212,7 +276,7 @@ hr {border-color: var(--border); opacity: 1;}
   left: 1rem;
   top: -4rem;
   z-index: 2000;
-  padding: .75rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   background: var(--text);
   color: var(--surface);
   border-radius: var(--radius-sm);
@@ -220,4 +284,7 @@ hr {border-color: var(--border); opacity: 1;}
   transition: top var(--dur) var(--ease);
 }
 
-.skip-link:focus {top: 1rem; color: var(--surface);}
+.skip-link:focus {
+  top: 1rem;
+  color: var(--surface);
+}

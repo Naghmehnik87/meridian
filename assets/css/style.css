@@ -288,3 +288,11 @@ hr {
   top: 1rem;
   color: var(--surface);
 }
+
+.container,
+.container-fluid,
+.container-lg,
+.container-xl {
+  --bs-gutter-x: var(--gutter);
+}
+

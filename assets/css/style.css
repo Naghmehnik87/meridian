@@ -296,3 +296,10 @@ hr {
   --bs-gutter-x: var(--gutter);
 }
 
+@media (min-width: 1400px) {
+  .container,
+  .container-xl,
+  .container-xxl {
+    max-width: 1280px;
+  }
+}

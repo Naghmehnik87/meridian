@@ -631,3 +631,30 @@ textarea.form-control {
   height: 1.25em;
   margin-top: .125em;
 }
+
+.was-validated .form-control:invalid,
+.form-control.is_invalid {
+  border-color: var(--danger);
+  background-image: none;
+}
+
+.was-validated .form-control:valid,
+.form-control.is_valid {
+  border-color: var(--success);
+  background-image: none;
+}
+
+.invalid-feedback,
+.field-error {
+  display: none;
+  color: var(--danger);
+  font-size: var(--fs-xs);
+  margin-top: .375rem;
+  align-items: center;
+  gap: .3125rem
+}
+
+.field-error.is-shown,
+.is-invalid ~ .invalid-feedback {
+  display: flex;
+}

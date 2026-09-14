@@ -687,3 +687,21 @@ textarea.form-control {
   color: var(--text);
   background: var(--surface-2);
 }
+
+.strength {
+  margin-top: .75rem;
+}
+
+.strength__track {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+}
+
+.strength__seg {
+  height: 4px;
+  border-radius: 2px;
+  background: var(--surface-3);
+  transition: var(--dur) var(--ease);
+}
+

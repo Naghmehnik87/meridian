@@ -689,7 +689,7 @@ textarea.form-control {
 }
 
 .strength {
-  margin-top: .75rem;
+  margin-top: 0.75rem;
 }
 
 .strength__track {
@@ -703,5 +703,27 @@ textarea.form-control {
   border-radius: 2px;
   background: var(--surface-3);
   transition: var(--dur) var(--ease);
+}
+
+.strength[data-score="1"] .strength__seg:nth-child(-n + 1) {
+  background: var(--danger);
+}
+
+.strength[data-score="2"] .strength__seg:nth-child(-n + 2) {
+  background: var(--accent);
+}
+
+.strength[data-score="3"] .strength__seg:nth-child(-n + 3) {
+  background: #88cc15;
+}
+
+.strength[data-score="4"] .strength__seg {
+  background: var(--success);
+}
+
+.strength__label {
+  font-size: var(--fs-xs);
+  color: var(--muted);
+  margin-top: 0.5rem;
 }
 

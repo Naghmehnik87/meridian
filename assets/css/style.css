@@ -727,3 +727,26 @@ textarea.form-control {
   margin-top: 0.5rem;
 }
 
+.req-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 0;
+  display: grid;
+  gap: 0.3125rem;
+}
+
+.req-list li::before {
+  content: "\F62A";
+  font-family: "bootstrap-icons";
+  font-size: 0.875rem;
+  color: var(--faint);
+}
+
+.req-list li.is-met {
+  color: var(--success);
+}
+
+.req-list li.is-met::before {
+  content: "\F26B";
+  color: var(--success);
+}

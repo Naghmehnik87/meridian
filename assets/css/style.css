@@ -792,3 +792,67 @@ textarea.form-control {
   font-size: var(--fs-sm);
   font-weight: 600;
 }
+
+.swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.swatch {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--border-strong);
+  padding: 3px;
+  background: var(--surface);
+  position: relative;
+  cursor: pointer;
+  transition: var(--dur-fast) var(--ease);
+}
+
+.swatch__dot {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+
+.swatch:hover {
+  transform: scale(1.06);
+}
+
+.swatch[aria-pressed="true"] {
+  border: var(--primary);
+  border-width: 2px;
+  padding: 2px;
+}
+
+.size-option {
+  min-width: 46px;
+  padding: .5rem .75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background: var(--surface);
+  color: var(--text);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--dur-fast) var(--ease);
+}
+
+.size-option:hover {
+  border-color: var(--text);
+}
+
+.size-option[aria-pressed="true"] {
+  background: var(--inverse);
+  color: var(--on-inverse);
+  border-color: var(--inverse);
+}
+
+.size-option:disabled {
+  opacity: .4;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}

@@ -750,3 +750,45 @@ textarea.form-control {
   content: "\F26B";
   color: var(--success);
 }
+
+.qty {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.qty__btn {
+  width: 38px;
+  height: 40px;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font-size: var(--fs-body);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--dur-fast) var(--ease);
+}
+
+.qty__btn:hover:not(:disabled) {
+  background: var(--surface-2);
+}
+
+.qty__btn:disabled {
+  color: var(--faint);
+}
+
+.qty__input {
+  width: 46px;
+  height: 40px;
+  border: 0;
+  border-inline: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  text-align: center;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}

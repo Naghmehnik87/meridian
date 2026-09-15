@@ -919,3 +919,22 @@ textarea.form-control {
   color: var(--accent);
 }
 
+.status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4375rem;
+  font-size: var(--fs-xs);
+  padding: .375rem .625rem;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  color: var(--muted);
+}
+
+.status::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: currentColor;
+  flex: none;
+}

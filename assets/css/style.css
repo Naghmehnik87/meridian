@@ -1177,3 +1177,48 @@ textarea.form-control {
   margin: 0;
 }
 
+.category-tile {
+  position: relative;
+  display: block;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  aspect-ratio: 4 / 5;
+  color: var(--text);
+}
+
+.category-tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--dur-slow) var(--ease);
+}
+
+.category-tile:hover img {
+  transform: scale(1.04);
+}
+
+.category-tile__label {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 1.5rem 1.125rem 1.125rem;
+  background:
+    linear-gradient(to top),
+    rgba(17, 24, 39, 0.92) 0%,
+    rgba(17, 24, 39, 0.62) 42%,
+    rgba(17, 24, 39, 0) 100%;
+  color: #fff;
+}
+
+.category-tile__name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.0625rem;
+  letter-spacing: -0.02em;
+}
+
+.category-tile__count {
+  font-size: var(--fs-xs);
+  color: rgba(255, 255, 255, .75);
+}

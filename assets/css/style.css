@@ -1554,3 +1554,29 @@ textarea.form-control {
   font-size: var(--fs-body);
   flex: none;
 }
+
+.nav-main {
+  display: flex;
+  align-items: center;
+  gap: .25rem;
+}
+
+.nav-main__link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: .375rem;
+  padding: .5rem .75rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  font-weight: 550;
+  color: var(--text);
+  white-space: nowrap;
+  transition: var(--dur-fast) var(--ease);
+}
+
+.nav-main__link:hover {
+  color: var(--primary);
+  background: var(--surface-2);
+}
+

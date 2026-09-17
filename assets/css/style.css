@@ -1391,3 +1391,7 @@ textarea.form-control {
   flex: 1;
 }
 
+.card-product__cat {
+  font-size: var(--fs-xs);
+  color: var(--muted);
+}

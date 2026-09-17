@@ -1526,3 +1526,31 @@ textarea.form-control {
   display: block;
   height: var(--navbar-h);
 }
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5625rem;
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--text);
+}
+
+.brand:hover {
+  color: var(--text);
+}
+
+.brand__mark {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--primary);
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--fs-body);
+  flex: none;
+}

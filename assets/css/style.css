@@ -1500,3 +1500,29 @@ textarea.form-control {
   position: relative;
   z-index: 1000;
 }
+
+.navbar-main {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  min-height: var(--navbar-h);
+  transition: var(--dur) var(--ease);
+}
+
+.navbar-main.is_stuck {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1030;
+  box-shadow: var(--shadow-sm);
+  border-bottom-color: transparent;
+}
+
+.header-spacer {
+  display: none;
+}
+
+.header-spacer.is_active {
+  display: block;
+  height: var(--navbar-h);
+}

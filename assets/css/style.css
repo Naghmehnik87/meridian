@@ -1469,3 +1469,34 @@ textarea.form-control {
   color: var(--text);
   overflow: hidden;
 }
+
+.announce {
+  background: var(--inverse);
+  color: var(--on-inverse);
+  font-size: var(--fs-xs);
+  padding: 0.5625rem 0;
+}
+
+.announce a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.announce__list {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.announce__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4375rem;
+  opacity: 0.85;
+}
+
+.site-header {
+  position: relative;
+  z-index: 1000;
+}

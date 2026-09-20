@@ -1743,3 +1743,62 @@ textarea.form-control {
 .offcanvas-nav__sub a:hover {
   color: var(--text);
 }
+
+.search {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+}
+
+.search__field {
+  display: flex;
+  align-items: center;
+  grid-area: 0.5rem;
+  background: var(--surface-2);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  padding: 0 0.875rem;
+  height: 42px;
+  transition: var(--dur-fast) var(--ease);
+}
+
+.search__field:focus-within {
+  background: var(--surface);
+  border-color: var(--primary);
+  box-shadow: var(--ring);
+}
+
+.search__icon {
+  color: var(--muted);
+  font-size: var(--fs-body);
+  flex: none;
+}
+
+.search__input {
+  flex: 1;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font-size: var(--fs-sm);
+  min-width: 0;
+}
+
+.search__input:focus {
+  outline: none;
+}
+
+.search__input::placeholder {
+  color: var(--faint);
+}
+
+.search__clear {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  display: none;
+  padding: 0 0.25rem;
+}
+
+.search__field.has_value .search__clear {
+  display: block;
+}

@@ -1709,3 +1709,37 @@ textarea.form-control {
     rgba(17, 24, 39, 0.15)
   );
 }
+
+.offcanvas-nav__link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.875rem 0;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+
+.offcanvas-nav__link:hover {
+  color: var(--primary);
+}
+
+.offcanvas-nav__sub {
+  list-style: none;
+  padding-bottom: 0.75rem;
+  margin: 0;
+  display: grid;
+  gap: 0.125rem;
+}
+
+.offcanvas-nav__sub a {
+  display: block;
+  padding: 0.4375rem 0;
+  color: var(--muted);
+  font-size: var(--fs-sm);
+}
+
+.offcanvas-nav__sub a:hover {
+  color: var(--text);
+}

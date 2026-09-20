@@ -1870,3 +1870,26 @@ textarea.form-control {
   margin-top: 0.0375rem;
   padding-top: 0.5rem;
 }
+
+.offcanvas {
+  background: var(--surface);
+  color: var(--text);
+  border-left: 1px solid var(--border);
+}
+
+.offcanvas-header {
+  border-bottom: 1px solid var(--border);
+  padding: 1.125rem 1.375rem;
+}
+
+.offcanvas-title {
+  font-size: 1.0625rem;
+}
+
+.offcanvas-body {
+  padding: 1.375rem;
+}
+
+.btn-close {
+  --bs-btn-close-focus-shadow: var(--ring);
+}

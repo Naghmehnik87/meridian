@@ -1621,3 +1621,30 @@ textarea.form-control {
   font-weight: 650;
   padding: 0.5rem 0.6875rem 0.25rem;
 }
+
+.megamenu {
+  position: static;
+}
+
+.megamenu__panel {
+  width: min(1180px, calc(100vw - 3rem));
+  padding: 1.75rem;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-lg);
+  background: var(--surface);
+}
+
+.megamenu__group-title {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  font-family: var(--font-display);
+  font-size: var(--fs-sm);
+  font-weight: 700;
+  letter-spacing: -.015em;
+  color: var(--text);
+  padding-bottom: 0.6875rem;
+  margin-bottom: 0.6875rem;
+  border-bottom: 1px solid var(--border);
+}

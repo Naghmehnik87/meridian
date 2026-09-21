@@ -1938,3 +1938,43 @@ textarea.form-control {
   color: var(--text);
   font-weight: 550;
 }
+
+.pagination {
+  gap: .3125rem;
+}
+
+.page-link {
+  min-width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+
+.page-link:hover {
+  background: var(--surface-2);
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+
+.page-link:focus {
+  box-shadow: var(--ring);
+}
+
+.page-item.active .page-link {
+  background: var(--inverse);
+  border-color: var(--inverse);
+  color: var(--on-inverse);
+}
+
+.page-item.disabled .page-link {
+  background: var(--surface);
+  border-color: var(--faint);
+  color: var(--border);
+}

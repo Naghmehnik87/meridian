@@ -1893,3 +1893,25 @@ textarea.form-control {
 .btn-close {
   --bs-btn-close-focus-shadow: var(--ring);
 }
+
+.modal-content {
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.modal-header,
+.modal-footer {
+  border-color: var(--border);
+  padding: 1.125rem 1.5rem;
+}
+
+.modal-body {
+  padding: 1.5rem;
+}
+
+.modal-backdrop.show {
+  opacity: 0.5;
+}

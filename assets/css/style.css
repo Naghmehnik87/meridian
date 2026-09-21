@@ -1915,3 +1915,26 @@ textarea.form-control {
 .modal-backdrop.show {
   opacity: 0.5;
 }
+
+.breadcrumb {
+  font-size: var(--fs-xs);
+  margin: 0;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '/';
+  color: var(--faint);
+}
+
+.breadcrumb-item a {
+  color: var(--muted);
+}
+
+.breadcrumb-item a:hover {
+  color: var(--primary);
+}
+
+.breadcrumb-item.active {
+  color: var(--text);
+  font-weight: 550;
+}

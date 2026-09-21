@@ -2036,7 +2036,7 @@ textarea.form-control {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
   overflow: hidden;
 }
 
@@ -2045,7 +2045,7 @@ textarea.form-control {
   color: var(--text);
   font-family: var(--font-display);
   font-weight: 650;
-  font-size: .9375rem;
+  font-size: 0.9375rem;
   letter-spacing: -0.015em;
   padding: 1.0625rem 1.25rem;
   box-shadow: none;
@@ -2068,3 +2068,57 @@ textarea.form-control {
   line-height: 1.7;
 }
 
+.site-footer {
+  background: var(--secondary);
+  color: #cbd5e1;
+  padding-top: clamp(3rem, 2rem + 3vw, 4.5rem);
+  margin-top: auto;
+}
+
+[data-theme="dark"] .site-footer {
+  background: #0a101f;
+  border-top: 1px solid var(--border);
+}
+
+.site-footer .brand {
+  color: #fff;
+}
+
+.site-footer h3 {
+  color: #fff;
+  font-size: var(--fs-sm);
+  font-weight: 650;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.0625rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.625rem;
+}
+
+.footer-links a {
+  color: #94a3b8;
+  font-size: var(--fs-sm);
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-note {
+  color: #94a3b8;
+  font-size: var(--fs-sm);
+  line-height: 1.65;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-top: 2.5rem;
+  padding-block: 1.5rem;
+  font-size: var(--fs-xs);
+  color: #94a3b8;
+}

@@ -2027,3 +2027,44 @@ textarea.form-control {
   background: var(--inverse);
   color: var(--on-inverse);
 }
+
+.accordion {
+  --bs-accordion-border-color: var(--border);
+}
+
+.accordion-item {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  margin-bottom: .75rem;
+  overflow: hidden;
+}
+
+.accordion-button {
+  background: var(--surface);
+  color: var(--text);
+  font-family: var(--font-display);
+  font-weight: 650;
+  font-size: .9375rem;
+  letter-spacing: -0.015em;
+  padding: 1.0625rem 1.25rem;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  background: var(--surface);
+  color: var(--primary);
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: var(--ring);
+}
+
+.accordion-body {
+  padding: 0 1.25rem 1.25rem;
+  color: var(--muted);
+  font-size: var(--fs-sm);
+  line-height: 1.7;
+}
+

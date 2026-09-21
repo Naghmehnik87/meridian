@@ -55,6 +55,7 @@
               Meridian
             </a>
 
+            <!-- Desktop navigation -->
             <nav class="nav-main ms-2" aria-label="Main">
               <div class="dropdown megamenu js-hover-dropdown">
                 <button
@@ -386,6 +387,89 @@
       </div>
       <div class="header-spacer" id="headerSpacer" aria-hidden="true"></div>
     </header>
+
+    <div
+      class="offcanvas offcanvas-start"
+      tabindex="-1"
+      id="mobileNav"
+      aria-labelledby="mobileNavTitle"
+    >
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title h5" id="mobileNavTitle">Menu</h2>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close menu"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <nav aria-label="Mobile">
+          <a class="offcanvas-nav__link" href="shop.html"
+            >Shop all<i class="bi bi-chevron-right" aria-hidden="true"></i
+          ></a>
+
+          <button
+            class="offcanvas-nav__link w-100 bg-transparent border-0 border-bottom text-start"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mobileCats"
+            aria-expanded="false"
+          >
+            Categories<i class="bi bi-chevron-down" aria-hidden="true"></i>
+          </button>
+          <div class="collapse" id="mobileCats">
+            <ul class="offcanvas-nav__sub pt-2">
+              <li><a href="shop.html?category=electronics">Electronics</a></li>
+              <li><a href="shop.html?category=fashion">Fashion</a></li>
+              <li><a href="shop.html?category=home">Home</a></li>
+              <li><a href="shop.html?category=beauty">Beauty</a></li>
+              <li><a href="shop.html?category=sports">Sports</a></li>
+              <li><a href="shop.html?category=accessories">Accessories</a></li>
+              <li><a href="shop.html?category=gaming">Gaming</a></li>
+            </ul>
+          </div>
+
+          <a class="offcanvas-nav__link" href="shop.html?sort=newest"
+            >New arrivals<i class="bi bi-chevron-right" aria-hidden="true"></i
+          ></a>
+          <a class="offcanvas-nav__link" href="shop.html?sale=1"
+            >Deals<i class="bi bi-chevron-right" aria-hidden="true"></i
+          ></a>
+          <a class="offcanvas-nav__link" href="wishlist.html">
+            Wishlist
+            <span class="badge-soft js-wish-count" data-count="0">0</span>
+          </a>
+          <a class="offcanvas-nav__link" href="about.html"
+            >About<i class="bi bi-chevron-right" aria-hidden="true"></i
+          ></a>
+          <a class="offcanvas-nav__link" href="contact.html"
+            >Contact<i class="bi bi-chevron-right" aria-hidden="true"></i
+          ></a>
+        </nav>
+
+        <div class="mt-4 pt-3 border-top">
+          <p class="text-xs text-muted-2 mb-2">Your account</p>
+          <div class="d-grid gap-2">
+            <a class="btn btn-brand" href="login.html">Sign in</a>
+            <a class="btn btn-outline-ink" href="register.html"
+              >Create account</a
+            >
+          </div>
+          <div class="d-grid gap-2 mt-3">
+            <a class="btn btn-quiet justify-content-start" href="profile.html"
+              ><i class="bi bi-person-circle"></i>Profile</a
+            >
+            <a class="btn btn-quiet justify-content-start" href="orders.html"
+              ><i class="bi bi-box-seam"></i>Orders</a
+            >
+            <a class="btn btn-quiet justify-content-start" href="dashboard.html"
+              ><i class="bi bi-speedometer2"></i>Admin dashboard</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>

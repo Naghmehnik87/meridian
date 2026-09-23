@@ -114,3 +114,139 @@
     height: 64px;
   }
 }
+
+@media (max-width: 768px) {
+  :root {
+    --gutter: 1rem;
+  }
+
+  .announce__item + .announce__item {
+    display: none;
+  }
+
+  .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .section-head__aside {
+    width: 100%;
+  }
+
+  .card-product__body {
+    padding: 0.75rem 0.8125rem 0.875rem;
+  }
+
+  .card-product__name {
+    font-size: var(--fs-xs);
+  }
+
+  .price {
+    font-size: 0.9375rem;
+  }
+
+  .card-product__tools {
+    opacity: 1;
+    transform: none;
+  }
+
+  .card-product__tool {
+    width: 32px;
+    height: 32px;
+    font-size: 0.9375rem;
+  }
+
+  .rail {
+    grid-auto-columns: 74%;
+  }
+
+  .countdown__cell {
+    min-width: 54px;
+    padding: 0.5rem 0.375rem;
+  }
+
+  .countdown__value {
+    font-size: 1.25rem;
+  }
+
+  .social-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .cart-line {
+    grid-template-columns: 72px minmax(0, 1fr);
+    gap: 0.875rem;
+  }
+
+  .cart-line__thumb {
+    width: 72px;
+    height: 72px;
+  }
+
+  .cart-line__end {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .stepper {
+    gap: 0.375rem;
+  }
+
+  .step:not(.is-active) .step__label span:last-child {
+    display: none;
+  }
+
+  .rating-big {
+    font-size: 2.5rem;
+  }
+
+  .gallery__stage {
+    cursor: default;
+  }
+
+  .gallery__thumbs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .gallery__thumbs::-webkit-scrollbar {
+    display: none;
+  }
+
+  .gallery__thumb {
+    flex: none;
+  }
+
+  .toast-stack {
+    right: 0.75rem;
+    left: 0.75rem;
+    bottom: 0.75rem;
+    width: auto;
+  }
+
+  .buy-row .btn {
+    flex: 1 1 100%;
+  }
+
+  .table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .table-scroll .table-brand {
+    min-width: 640px;
+  }
+
+  .newsletter {
+    border-radius: var(--radius-lg);
+  }
+
+  .error-code {
+    line-height: 1;
+  }
+}

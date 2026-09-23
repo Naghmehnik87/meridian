@@ -1,0 +1,11 @@
+@media (min-width: 1400px) {
+  :root { --gutter: 1.75rem; }
+  .rail { grid-auto-columns: calc((100% - 3 * var(--gutter)) / 4); }
+}
+
+@media (max-width: 1199.98px) {
+  .nav-main__link { padding-inline: 0.5625rem; }
+  .search { max-width: 320px; }
+  .rail { grid-auto-columns: calc((100% - 2 * var(--gutter)) / 3); }
+  .hero__tag { left: 0; }
+}

@@ -299,3 +299,24 @@
     font-size: var(--fs-sm);
   }
 }
+
+@media print {
+  .site-header,
+  .site-footer,
+  .toast-stack,
+  .rail-nav,
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .card,
+  .surface-panel {
+    border: 1px solid #ccc;
+    box-shadow: none;
+  }
+}

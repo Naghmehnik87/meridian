@@ -250,3 +250,52 @@
     line-height: 1;
   }
 }
+
+@media (max-width: 576px) {
+  .hero__actions .btn {
+    flex: 1 1 100%;
+  }
+
+  .hero__trust {
+    gap: 1rem 1.5rem;
+  }
+
+  .hero__trust-value {
+    font-size: 1.125rem;
+  }
+
+  .countdown {
+    gap: 0.3125rem;
+  }
+
+  .countdown__cell {
+    min-width: 46px;
+  }
+
+  .countdown__sep {
+    display: none;
+  }
+
+  .social-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+  }
+
+  .rail {
+    grid-auto-columns: 82%;
+  }
+
+  .filter-actions .btn,
+  .summary .btn {
+    width: 100%;
+  }
+
+  .megamenu__panel {
+    padding: 1.25rem;
+  }
+
+  .btn-lg-brand {
+    padding: 0.8125rem 1.25rem;
+    font-size: var(--fs-sm);
+  }
+}

@@ -997,6 +997,36 @@
       </div>
     </footer>
 
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="miniCart"
+      aria-labelledby="miniCartTitle"
+    >
+      <div class="offcanvas-header">
+        <h2 class="offcanvas-title h5" id="miniCartTitle">Your cart</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close cart"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+        <div id="miniCartBody" class="flex-grow-1"></div>
+        <div id="miniCartFoot" class="mini-cart__foot">
+          <div class="summary-row mb-2">
+            <span class="text-muted-2"> Subtotal </span>
+            <span class="price" id="miniCartSubtotal"> $0.00 </span>
+          </div>
+          <p class="text-xs text-muted-2">
+            Shipping and tax are calculated at checkout.
+          </p>
+          <div class="d-grid gap-2">
+            <a href="checkout.html" class="btn btn-brand btn-lg-brand"
+              >Checkout</a
+            >
+            <a href="cart.html" class="btn btn-outline-ink">View Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/main.js"></script>
   </body>
